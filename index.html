@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="flex justify-center items-center h-screen">
+        <div class="container mx-auto px-4 py-8 bg-white rounded shadow-lg max-w-md">
+            <h1 class="text-3xl font-bold mb-6 text-center">Calculadora Comunista</h1>
+            <div class="mb-4">
+                <label class="block mb-2"><strong>Valor de Prata nas Sacolas:</strong></label>
+                <input id="valor-sacolas" type="text" class="w-full p-2 border border-gray-300 rounded"
+                    placeholder="Informe o valor" autocomplete="off">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2"><strong>Valor total dos itens:</strong></label>
+                <input id="valor-itens" type="text" class="w-full p-2 border border-gray-300 rounded"
+                    placeholder="Informe o valor" autocomplete="off">
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2"><strong>Quantidade de pessoas na PT:</strong></label>
+                <input id="quantidade-pessoas" type="text" class="w-full p-2 border border-gray-300 rounded"
+                    placeholder="Informe a quantidade" autocomplete="off">
+            </div>
+            <button id="calcular-btn"
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+                Calcular
+            </button>
+            <div id="resultado" class="mt-6 hidden">
+                <h2 class="text-2xl font-bold mb-4">Resultado:</h2>
+                <div class="resultado-item">
+                    <p><strong>Valor Total:</strong> <span id="valor-total"></span></p>
+                </div>
+                <div class="resultado-item">
+                    <p><strong>Valor Player:</strong> <span id="valor-player"></span></p>
+                </div>
+                <div class="resultado-item">
+                    <p><strong>Valor Guilda:</strong> <span id="valor-guilda"></span></p>
+                </div>
+                <div class="resultado-item">
+                    <p><strong>Valor por Pessoa:</strong> <span id="valor-por-pessoa"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

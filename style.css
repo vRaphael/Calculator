@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://assets.albiononline.com/uploads/media/default/media/c3f03cfe6018826b2947a5ca85f707d0a9d1c334.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    z-index: -1;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.resultado-item {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+.resultado-item:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.resultado-item p {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
